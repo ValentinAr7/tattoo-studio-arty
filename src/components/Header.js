@@ -7,7 +7,7 @@ import { TiThMenu } from "react-icons/ti";
 import logoArty from "../assets/logoArty.png";
 
 const Header = () => {
-  const { logo } = headerData;
+  // const { logo } = headerData;
   const [isActive, setIsActive] = useState(false);
   const [navMobile, setNavMobile] = useState(false);
 

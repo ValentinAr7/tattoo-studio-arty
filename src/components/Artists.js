@@ -1,16 +1,13 @@
 import React from "react";
-// import contact data
-import { contactData } from "../data";
-// import motion
+// import { contactData } from "../data";
+// import { artistData } from "../data";
 import { motion } from "framer-motion";
-// import variants
 import { fadeIn } from "../variants";
 import artist1 from "../img/artists/artyHD.jpg";
 import artist2 from "../img/artists/rumenHD.jpg";
-import { artistData } from "../data";
 
 const Artist = () => {
-  const { img, btnText, artistName, artistTitle, description } = artistData;
+  // const { img, btnText, artistName, artistTitle, description } = artistData;
   return (
     <section id="artists" className="lg:py-16 xl:pb-[160px]">
       <div className="container mx-auto">

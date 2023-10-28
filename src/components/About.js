@@ -1,20 +1,14 @@
 import React from "react";
-// import about data
 import { aboutData } from "../data";
-// import motion
 import { motion } from "framer-motion";
-// import variants
 import { fadeIn } from "../variants";
 
 const About = () => {
-  // destructure about data
-  const { title, subtitle1, subtitle2, subtitle3, subtitle4, img1, img2 } =
-    aboutData;
+  const { subtitle1, subtitle2, subtitle3, subtitle4, img1 } = aboutData;
   return (
     <section id="about" className="lg:py-16 xl:pb-[160px]">
       <div className="container mx-auto px-8">
         <div className="flex flex-col lg:flex-row gap-x-[70px] items-center">
-          {/* numbers */}
           <motion.div
             variants={fadeIn("right")}
             initial="hidden"

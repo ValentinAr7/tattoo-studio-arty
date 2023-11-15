@@ -5,7 +5,7 @@
   "dependencies": {
     "react-helmet": "^6.1.0",
     "react-router-dom": "^6.10.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "latest_version",
     "react-scroll": "^1.8.9"
   },
   "scripts": {

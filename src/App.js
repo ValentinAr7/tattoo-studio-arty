@@ -16,6 +16,7 @@ import { Video } from "./components/Video";
 import Artist from "./components/Artists";
 import HeaderSec from "./components/HeaderSec";
 import { Faq } from "./components/Faq";
+import Instagram from "./components/Instagram";
 
 const App = () => {
   return (
@@ -23,7 +24,8 @@ const App = () => {
       <HeaderSec />
       <Video />
       <About />
-      <GallerySection />
+      <Instagram />
+      {/* <GallerySection /> */}
       <Artist />
       {/* <Skills /> */}
       <Testimonial />

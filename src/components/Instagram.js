@@ -37,22 +37,45 @@ const Instagram = () => {
         id="gallery"
         className="bg-[#F9F9F9] section relative mt-[40px] lg:mt-0"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto flex flex-col items-center">
           <h2 className="h2 max-w-none mb-12">Последвайте ни в инстаграм</h2>
 
           {isMobile ? (
-            <img
-              src={require("../assets/phone-tatts.png")}
-              alt="Tattoo for phones"
-              className="w-full h-auto"
-            />
+            <a
+              href="https://www.instagram.com/tattoo_studio_arty/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("../assets/phone-tatts.png")}
+                alt="Tattoo for phones"
+                className="w-full h-auto"
+              />
+            </a>
           ) : (
-            <img
-              src={require("../assets/tatts.png")}
-              alt="Tattoo"
-              className="w-full h-auto"
-            />
+            <a
+              href="https://www.instagram.com/tattoo_studio_arty/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("../assets/tatts.png")}
+                alt="Tattoo"
+                className="w-full h-auto"
+              />
+            </a>
           )}
+
+          <div className="mt-4 flex justify-center">
+            <a
+              href="https://www.instagram.com/tattoo_studio_arty/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-sm btn-dark"
+            >
+              Последвай ни сега
+            </a>
+          </div>
         </div>
       </section>
     </motion.div>

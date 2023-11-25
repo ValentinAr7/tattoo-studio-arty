@@ -13,51 +13,41 @@ const Contact = () => {
     <section id="contact" className="section">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-y-16">
-          {/* text */}
-          <motion.div
+          <motion.div           
+
             variants={fadeIn("right")}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.4 }}
             className="flex-1"
           >
-            {/* title */}
             <h2 className="h2 max-w-[490px]">{title}</h2>
-            {/* info items */}
             <div className="flex flex-col xl:flex-row gap-x-5 gap-y-16 xl:gap-y-0">
               {info.map((item, index) => {
-                // destructure item
                 const { title, subtitle, address, phone, email, link } = item;
                 return (
-                  // item
                   <div key={index}>
-                    {/* title */}
-                    <div className="font-primary uppercase font-medium text-xl mb-3">
+                    /
+                    <div className="font-primary uppercase font-medium text-xl mb-3"> 
                       {title}
                     </div>
-                    {/* subtitle */}
                     <div className="mb-6 text-[#333] leading-[187%] tracking-[0.02em]">
                       {subtitle}
                     </div>
-                    {/* address, phone & email */}
                     <div className="flex flex-col gap-y-3 mb-8">
-                      {/* address */}
                       <div className="flex items-center gap-[10px]">
                         <div>{address.icon}</div>
                         <div className="font-medium">{address.name}</div>
                       </div>
-                      {/* phone */}
                       <div className="flex items-center gap-[10px]">
                         <div>{phone.icon}</div>
                         <div className="font-medium">{phone.number}</div>
                       </div>
-                      {/* email */}
                       <div className="flex items-center gap-[10px]">
                         <div>{email.icon}</div>
                         <div className="font-medium">{email.address}</div>
                       </div>
                     </div>
-                    {/* link */}
                     <a
                       className="font-medium border-b border-dark pb-[5px]"
                       href="https://www.google.bg/maps/place/TATTOO+ARTY+Studio/@42.7139948,23.253861,17z/data=!3m1!4b1!4m6!3m5!1s0x40aa9b2eb648f3c1:0x1eee948096254a35!8m2!3d42.7139948!4d23.2560497!16s%2Fg%2F11t6mv3p6x"
@@ -69,8 +59,8 @@ const Contact = () => {
               })}
             </div>
           </motion.div>
-          {/* form */}
-          <motion.div
+          <motion.div         
+
             variants={fadeIn("left")}
             initial="hidden"
             whileInView={"show"}

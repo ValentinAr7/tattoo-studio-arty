@@ -25,7 +25,7 @@ const App = () => {
       <Video />
       <About />
       <Instagram />
-      {/* <GallerySection /> */}
+      <GallerySection />
       <Artist />
       {/* <Skills /> */}
       <Testimonial />

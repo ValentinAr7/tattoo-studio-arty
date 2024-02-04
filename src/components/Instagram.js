@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { InstagramData } from "../data";
 import "yet-another-react-lightbox/styles.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";

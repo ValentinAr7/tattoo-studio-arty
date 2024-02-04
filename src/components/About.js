@@ -26,6 +26,7 @@ const About = () => {
                 <p className="mb-6">{subtitle2}</p>
                 <img
                   src={img1}
+                  alt=""
                   className=" w-[500px] h-[300px] shadow-md shadow-black rounded-sm "
                 />
               </div>

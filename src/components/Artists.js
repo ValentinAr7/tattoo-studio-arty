@@ -39,6 +39,7 @@ const Artist = () => {
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
                     src={artist1}
+                    alt="arty"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />
                 </div>
@@ -70,6 +71,7 @@ const Artist = () => {
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
                     src={require("../assets/henry.jpg")}
+                    alt="henry"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />
                 </div>
@@ -102,6 +104,7 @@ const Artist = () => {
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
                     src={require("../assets/girl.jpg")}
+                    alt="lilly"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />
                 </div>
@@ -134,6 +137,7 @@ const Artist = () => {
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
                     src={artist2}
+                    alt="rumen"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />
                 </div>

@@ -1,17 +1,11 @@
 import React from 'react';
-// import testimonial data
 import { testimonialData } from '../data';
-// import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
-// import motion
 import { motion } from 'framer-motion';
-// import variants
 import { fadeIn } from '../variants';
 import { useState } from 'react';
-import { Helmet } from 'react-helmet';
 import { IoIosStar } from '../../node_modules/react-icons/io'
 
 

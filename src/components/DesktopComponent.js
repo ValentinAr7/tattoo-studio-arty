@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import { headerData } from "../data";
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";

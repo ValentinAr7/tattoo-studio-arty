@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Instagram = () => {
-  const { title, btnText, btnIcon, images } = InstagramData;
+  // const { title, btnText, btnIcon, images } = InstagramData;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -13,13 +13,10 @@ const Instagram = () => {
       setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
     };
 
-    // Initial check on mount
     handleResize();
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleResize);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleResize);
     };

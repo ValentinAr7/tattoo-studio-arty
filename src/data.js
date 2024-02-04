@@ -1,4 +1,3 @@
-// import images
 import Logo from "../src/img/header/logo.svg";
 import GalleryImg1 from "../src/img/gallery/1.png";
 import GalleryImg2 from "../src/img/gallery/2.png";
@@ -9,16 +8,12 @@ import GalleryImg6 from "../src/img/gallery/6.png";
 import GalleryImg7 from "../src/img/gallery/7.png";
 import GalleryImg8 from "../src/img/gallery/8.png";
 import artist1 from "../src/img/artists/artyHD.jpg";
-import artist2 from "../src/img/artists/rumenHD.jpg";
 import QuoteImg from "../src/img/testimonial/quote.svg";
 
-//images for about page
 import paintImg from "../src/img/about/paint.jpg";
 import tattooImg from "../src/img/about/WorkingLogo.jpg";
-// import icons
 import { GrFacebookOption } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
-import { FiSend } from "react-icons/fi";
 import {
   FaPlay,
   FaMapMarkerAlt,
@@ -30,10 +25,6 @@ import {
 } from "react-icons/fa";
 import {
   IoLogoInstagram,
-  IoLogoPinterest,
-  IoLogoTwitter,
-  IoLogoYoutube,
-  IoMdVideocam,
   IoIosAdd,
 } from "react-icons/io";
 import { Link } from "react-scroll";

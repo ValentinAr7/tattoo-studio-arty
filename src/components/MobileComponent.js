@@ -1,20 +1,9 @@
 import React, { useState, useEffect } from 'react';
-// import header data
-import { headerData } from '../data';
-// import components
-import Nav from './Nav';
 import NavMobile from './NavMobile';
-import Socials from './Socials';
-// import icons
 import { TiThMenu } from 'react-icons/ti';
-import logoArty from '../assets/logoArty.png'
-import { socialDataPhone } from '../data';
+
 
 function MobileComponent(props) {
-
-    // destructure header data
-    const { logo } = headerData;
-
     const [isActive, setIsActive] = useState(false);
     const [navMobile, setNavMobile] = useState(false);
 

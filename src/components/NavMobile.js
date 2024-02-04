@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { navData } from "../data";
 import Socials from "./Socials";
 import { Link } from "react-scroll";
 
 const NavMobile = () => {
-  const { items } = navData;
-
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {

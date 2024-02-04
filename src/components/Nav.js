@@ -1,11 +1,7 @@
 import React from "react";
-// import nav data
-import { navData } from "../data";
 import { Link } from "react-scroll";
 
 const Nav = () => {
-  // destructure nav data
-  const { items } = navData;
   return (
     <nav>
       <ul className="flex gap-x-[58px]">

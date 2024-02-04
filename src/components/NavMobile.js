@@ -1,7 +1,7 @@
-import React, { useState, useEffect} from 'react';
-import { navData } from '../data';
-import Socials from './Socials';
-import { Link } from 'react-scroll';
+import React, { useState, useEffect } from "react";
+import { navData } from "../data";
+import Socials from "./Socials";
+import { Link } from "react-scroll";
 
 const NavMobile = () => {
   const { items } = navData;
@@ -17,21 +17,22 @@ const NavMobile = () => {
       const closeMenu = () => {
         setIsOpen(false);
       };
-      document.addEventListener('click', closeMenu);
+      document.addEventListener("click", closeMenu);
       return () => {
-        document.removeEventListener('click', closeMenu);
+        document.removeEventListener("click", closeMenu);
       };
     }
   }, [isOpen]);
 
   return (
-    <nav className='w-full h-full flex flex-col justify-evenly overflow-hidden'
-    onClick={(e) => {
-    }}>
-      <ul className='flex flex-col justify-center items-center gap-y-6 py-6 mb-8'>
+    <nav
+      className="w-full h-full flex flex-col justify-evenly overflow-hidden"
+      onClick={(e) => {}}
+    >
+      <ul className="flex flex-col justify-center items-center gap-y-6 py-6 mb-8">
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'video'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"video"}
           spy={true}
           smooth={true}
           offset={50}
@@ -42,8 +43,8 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'about'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"about"}
           spy={true}
           smooth={true}
           offset={-150}
@@ -54,11 +55,11 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'galery'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"gallery"}
           spy={true}
           smooth={true}
-          offset={-250}
+          offset={750}
           duration={500}
           onClick={handleClick}
         >
@@ -66,8 +67,8 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'artists'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"artists"}
           spy={true}
           smooth={true}
           offset={30}
@@ -78,8 +79,8 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'reviews'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"reviews"}
           spy={true}
           smooth={true}
           offset={-100}
@@ -90,8 +91,8 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-          to={'contact'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
+          to={"contact"}
           spy={true}
           smooth={true}
           offset={-150}
@@ -102,8 +103,8 @@ const NavMobile = () => {
         </Link>
 
         <Link
-          className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px] font-bold'
-          to={'faq'}
+          className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px] font-bold"
+          to={"faq"}
           spy={true}
           smooth={true}
           offset={-150}
@@ -113,7 +114,7 @@ const NavMobile = () => {
           Как да запазим час?
         </Link>
       </ul>
-      <div className='text-2xl'>
+      <div className="text-2xl">
         <Socials />
       </div>
     </nav>

@@ -21,10 +21,10 @@ const Nav = () => {
 
         <Link
           className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
-          to={"galery"}
+          to={"gallery"}
           spy={true}
           smooth={true}
-          offset={200}
+          offset={1200}
           duration={500}
         >
           Галерия

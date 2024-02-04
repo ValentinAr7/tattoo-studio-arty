@@ -6,18 +6,53 @@ import "yet-another-react-lightbox/styles.css";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
-const slides = galleryData.images.map(({ original, width, height }) => ({
+const slides = galleryData.images.map(({ original, width, height, title }) => ({
   src: original,
   width,
   height,
+  title,
 }));
 
 const GallerySection = () => {
   const [index, setIndex] = useState(-1);
-  const { title, btnText, btnIcon, images } = galleryData;
+  const { title, images   } = galleryData;
+
+  const renderImage = (photo, onClick) => {
+    const imageTitle = galleryData.images.find(
+      (img) => img.src === photo.src
+    )?.title;
+
+    return (
+      <div key={photo.key} className="relative">
+        <img
+          onClick={(e) => onClick(e, photo)}
+          alt={photo.title}
+          src={photo.src}
+          style={{ width: "100%", height: "auto", cursor: "pointer" }}
+        />
+        <div
+          className="absolute inset-0 flex items-center justify-center text-white font-bold"
+          style={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color: "white", // Adjust text color
+            fontSize: "1.5em", // Adjust font size
+            fontWeight: "bold", // Adjust font weight
+            textAlign: "center",
+            zIndex: 1,
+          }}
+        >
+          {imageTitle}
+        </div>
+      </div>
+    );
+  };
+
   return (
     <section
-      id="galery"
+      id="gallery"
       className="bg-[#F9F9F9] section relative mt-[40px] lg:mt-0"
     >
       <div className="container mx-auto">
@@ -41,6 +76,7 @@ const GallerySection = () => {
         <PhotoAlbum
           layout="rows"
           photos={images}
+          renderImage={renderImage}
           onClick={(event, photo, index) => setIndex(index)}
         />
         <Lightbox

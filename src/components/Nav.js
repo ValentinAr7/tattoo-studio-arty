@@ -5,16 +5,6 @@ const Nav = () => {
   return (
     <nav>
       <ul className="flex gap-x-[58px]">
-        {/* <Link className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-            to={'video'} spy={true} smooth={true} offset={50} duration={500}>
-            Начало
-          </Link> */}
-        {/*         
-          <Link className='link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]'
-            to={'about'} spy={true} smooth={true} offset={-50} duration={500}>
-            За нас
-          </Link> */}
-
         <Link
           className="link hover:border-b-2 hover:border-dark transition duration-300 flex gap-x-[58px]"
           to={"gallery"}

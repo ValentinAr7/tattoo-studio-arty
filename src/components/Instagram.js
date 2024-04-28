@@ -4,12 +4,11 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const Instagram = () => {
-  // const { title, btnText, btnIcon, images } = InstagramData;
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust the breakpoint as needed
+      setIsMobile(window.innerWidth <= 768);
     };
 
     handleResize();

@@ -11,11 +11,9 @@ import artist1 from "../src/img/artists/artyHD.jpg";
 import QuoteImg from "../src/img/testimonial/quote.svg";
 
 import paintImg from "../src/img/about/paint.jpg";
-import tattooImg from "../src/img/about/WorkingLogo.jpg";
 import { GrFacebookOption } from "react-icons/gr";
 import { IoMdArrowForward } from "react-icons/io";
 import {
-  FaPlay,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
@@ -66,14 +64,6 @@ export const socialDataPhone = [
   {},
 ];
 
-export const heroData = {
-  title: "Welcome",
-  subtitle:
-    "Tattoos have their own unique power and magic. They not only beautify the body but also the psyche.",
-  btnText: "read more",
-  btnIcon: <IoMdArrowForward />,
-};
-
 export const aboutData = {
   title: "Нашата История:",
   subtitle1: `Tattoo Arty Studio се намира в сърцето на София. 
@@ -85,7 +75,6 @@ export const aboutData = {
   subtitle3: `Ние сме специализирани в широка гама от стилове на татуиране, от традиционни до реалистични, и непрекъснато се стремим да сме в крак с най-новите тенденции и техники. Вярваме, че татуировка е нещо повече от физическо изживяване – то е също емоционално и духовно. Ето защо ние отделяме време да изслушаме нашите клиенти, да разберем техните желания и стремежи и да работим заедно с тях, за да създадем татуировка, която е наистина единствена по рода си. Гордеем се с нашето внимание към детайла, нашия ангажимент към чистотата и безопасността и нашата непоколебима отдаденост на нашия занаят. `,
   subtitle4: `Нашето студио е проектирано да осигури релаксираща и приветлива атмосфера. Използваме само най-висококачествено оборудване и мастило за татуиране и следваме стриктни процедури за стерилизация, за да гарантираме безопасността на нашите клиенти. В Tattoo Arty вярваме, че татуировката не е просто произведение на изкуството – тя е отражение на това кой сте. Позволете ни да ви помогнем да изразите себе си чрез боди арт, който е красив, смислен и вечен.`,
   img1: paintImg,
-  img2: tattooImg,
 };
 
 export const InstagramData = {
@@ -163,13 +152,6 @@ export const artistData = {
   artistTitle: "Основател / татуист",
   desciption: `Известен със своята креативност, прецизност и внимание към детайла, неговите проекти са много търсени.
   Скайлър казва: „Всичко зависи от страстта, която влагате, правете го правилно или не го правете изобщо.`,
-};
-
-export const interviewData = {
-  title:
-    "“Consider what you desire. Your tattoo artist will never tell you what tattoo to have.”",
-  btnText: "Watch it now",
-  btnIcon: <FaPlay />,
 };
 
 export const testimonialData = [

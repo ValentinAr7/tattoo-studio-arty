@@ -1,13 +1,10 @@
 import React from "react";
-// import { contactData } from "../data";
-// import { artistData } from "../data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import artist1 from "../img/artists/artyHD.jpg";
-import artist2 from "../img/artists/rumenHD.jpg";
+import artist1 from "../img/artists/artyHD.webp";
+import artist2 from "../img/artists/rumenHD.webp";
 
 const Artist = () => {
-  // const { img, btnText, artistName, artistTitle, description } = artistData;
   return (
     <section id="artists" className="lg:py-16 xl:pb-[160px]">
       <div className="container mx-auto">
@@ -70,7 +67,7 @@ const Artist = () => {
               <div className="card bg-[#F9F9F9] mx-4 mb-6 rounded-lg shadow-lg relative w-[340px] h-[640px]">
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
-                    src={require("../assets/henry.jpg")}
+                    src={require("../assets/henry.webp")}
                     alt="henry"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />
@@ -90,39 +87,6 @@ const Artist = () => {
                 <div className="artist-name text-center">
                   <h2 className=" @apply text-2xl font-bold mx-auto mb-2 overflow-hidden whitespace-nowrap truncate">
                     Димитър Henry Златанов
-                  </h2>
-                </div>
-                <div class="artist-title text-center">
-                  <h3 className="  @apply text-md font-bold mx-auto my-15 overflow-hidden whitespace-nowrap truncate">
-                    Tатуист
-                  </h3>
-                </div>
-              </div>
-
-              {/** Girl */}
-              <div className="card bg-[#F9F9F9] mx-4 mb-6 rounded-lg shadow-lg relative w-[340px] h-[640px]">
-                <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
-                  <img
-                    src={require("../assets/girl.jpg")}
-                    alt="lilly"
-                    className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
-                  />
-                </div>
-
-                {/* Button and effects */}
-                <div className="text-area pt-[400px]">
-                  <div className="text-center text-2xl font-bold p-5 mb-50 mt-10 relative transition-all duration-200 ease-in-out group">
-                    <button className="px-8 py-3 border-2 border-gray-700 bg-gray-900 text-white shadow-lg rounded-full transition-all duration-150 ease-in-out">
-                      <a href="https://www.instagram.com/tattoo_arty/">
-                        Instagram
-                      </a>
-                    </button>
-                  </div>
-                </div>
-
-                <div className="artist-name text-center">
-                  <h2 className=" @apply text-2xl font-bold mx-auto mb-2 overflow-hidden whitespace-nowrap truncate">
-                    Лили Игнатова
                   </h2>
                 </div>
                 <div class="artist-title text-center">

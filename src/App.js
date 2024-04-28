@@ -1,11 +1,4 @@
 import React from "react";
-
-// import components
-// import Hero from './components/Hero';
-// import Header from './components/Header';
-// import Skills from './components/Skills';
-// import Interview from './components/Interview';
-// import { BrowserRouter } from 'react-router-dom';
 import About from "./components/About";
 import GallerySection from "./components/GallerySection";
 import Testimonial from "./components/Testimonial";
@@ -29,13 +22,10 @@ const App = () => {
       <Artist />
       {/* <Skills /> */}
       <Testimonial />
-      {/* <Interview /> */}
-      {/* <Hero /> */}
       <Contact />
       <Faq />
       <Footer />
       <Copyright />
-      {/* <div className='h-[4000px]'></div> */}
     </div>
   );
 };

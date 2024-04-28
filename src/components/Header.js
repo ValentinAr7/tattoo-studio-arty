@@ -4,7 +4,7 @@ import Nav from "./Nav";
 import NavMobile from "./NavMobile";
 import Socials from "./Socials";
 import { TiThMenu } from "react-icons/ti";
-import logoArty from "../assets/logoArty.png";
+import logoArty from "../assets/logoArty.webp";
 
 const Header = () => {
   // const { logo } = headerData;

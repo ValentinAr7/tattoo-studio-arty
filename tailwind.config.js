@@ -31,6 +31,7 @@ module.exports = {
 
       backgroundImage: {
         hero: "url('/src/img/hero/bg.webp')",
+        about: "url('/src/img/about/image.webp')",
       },
 
       content: {

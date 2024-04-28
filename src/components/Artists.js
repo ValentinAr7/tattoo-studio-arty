@@ -1,13 +1,10 @@
 import React from "react";
-// import { contactData } from "../data";
-// import { artistData } from "../data";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-import artist1 from "../img/artists/artyHD.jpg";
-import artist2 from "../img/artists/rumenHD.jpg";
+import artist1 from "../img/artists/artyHD.webp";
+import artist2 from "../img/artists/rumenHD.webp";
 
 const Artist = () => {
-  // const { img, btnText, artistName, artistTitle, description } = artistData;
   return (
     <section id="artists" className="lg:py-16 xl:pb-[160px]">
       <div className="container mx-auto">
@@ -70,7 +67,7 @@ const Artist = () => {
               <div className="card bg-[#F9F9F9] mx-4 mb-6 rounded-lg shadow-lg relative w-[340px] h-[640px]">
                 <div className="img-area w-full h-[480px] absolute left-1/2 transform -translate-x-1/2 transition-all duration-200 ease-in-out">
                   <img
-                    src={require("../assets/henry.jpg")}
+                    src={require("../assets/henry.webp")}
                     alt="henry"
                     className="w-full h-full object-cover rounded-lg transition-all duration-200 ease-in-out hover:shadow-lg"
                   />

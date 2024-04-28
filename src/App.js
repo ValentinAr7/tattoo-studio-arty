@@ -1,8 +1,4 @@
 import React from "react";
-// import Header from './components/Header';
-// import Skills from './components/Skills';
-// import { BrowserRouter } from 'react-router-dom';
-
 import About from "./components/About";
 import GallerySection from "./components/GallerySection";
 import Testimonial from "./components/Testimonial";

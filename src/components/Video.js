@@ -1,5 +1,5 @@
 import React from "react";
-import bgImage from "../img/hero/bg.jpg"; // Import the image
+import bgImage from "../img/hero/bg.webp"; // Import the image
 import verticalVideoBg from "../assets/verticalVideo.mp4";
 import { useEffect, useState } from "react";
 

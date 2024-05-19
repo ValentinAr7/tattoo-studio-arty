@@ -192,7 +192,7 @@ export const contactData = {
       },
       phone: {
         icon: <FaPhoneAlt />,
-        number: "+359 88 5774197",
+        number: "+359 88 577 4197",
       },
       email: {
         icon: <FaEnvelope />,
